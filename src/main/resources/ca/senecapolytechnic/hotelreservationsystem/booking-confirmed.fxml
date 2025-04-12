@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="531.0" prefWidth="308.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.senecapolytechnic.hotelreservationsystem.controller.BookingConfirmedController">
+   <children>
+      <VBox prefHeight="543.0" prefWidth="308.0">
+         <children>
+            <HBox alignment="TOP_RIGHT" prefHeight="59.0" prefWidth="308.0" style="-fx-background-color: brown;" />
+            <VBox alignment="CENTER" prefHeight="540.0" prefWidth="308.0">
+               <children>
+                  <Label text="Booking Confirmed!">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <VBox alignment="CENTER_LEFT" prefHeight="333.0" prefWidth="237.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="337.0" prefWidth="222.0">
+                           <children>
+                              <Label text="Guest Details">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Text fx:id="nameText" strokeType="OUTSIDE" strokeWidth="0.0" text="Joe  Smith">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="phoneText" strokeType="OUTSIDE" strokeWidth="0.0" text="647-202-4123">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="emailText" strokeType="OUTSIDE" strokeWidth="0.0" text="joe.smith@example.com">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label text="Booking Details">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text fx:id="idText" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="guestsText" strokeType="OUTSIDE" strokeWidth="0.0" text="2 guests">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rooms:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <VBox fx:id="roomListVBox" prefHeight="0.0" prefWidth="207.0" />
+                              <Text fx:id="checkInText" strokeType="OUTSIDE" strokeWidth="0.0" text="Check in:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="checkOutText" strokeType="OUTSIDE" strokeWidth="0.0" text="Check out:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Label text="Estimated Cost">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Text fx:id="priceText" strokeType="OUTSIDE" strokeWidth="0.0" text="Price: $400">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Text>
+                              <Text fx:id="taxText" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax: $40">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="totalText" strokeType="OUTSIDE" strokeWidth="0.0" text="Total: $440">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="55.0" right="15.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <Text fx:id="checkOutText1" strokeType="OUTSIDE" strokeWidth="0.0" text="Please contact the front desk for final billing">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Text>
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="308.0">
+                     <children>
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleClose" text="Close">
+                           <font>
+                              <Font name="Dubai Regular" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
